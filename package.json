@@ -1,0 +1,54 @@
+{
+  "name": "js-apis",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "babel-node scripts/server.js",
+    "localtunnel": "lt --port 4200",
+    "share": "npm-run-all --parallel start localtunnel",
+    "build": "webpack",
+    "format:all": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aivazashvilitekla/js_APIs.git"
+  },
+  "author": "Tekla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aivazashvilitekla/js_APIs/issues"
+  },
+  "homepage": "https://github.com/aivazashvilitekla/js_APIs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.7.0",
+    "express": "^4.17.2",
+    "html-webpack-plugin": "^5.5.0",
+    "localtunnel": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "open": "^8.4.0",
+    "prettier": "^2.5.1",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "typescript-plugin-css-modules": "^3.4.0",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.7"
+  }
+}
